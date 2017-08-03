@@ -1,4 +1,4 @@
-var utils = require('../build/utils.js')
+var utils = require('./build/utils.js')
 var webpack = require('webpack')
 var config = require('./config')
 var merge = require('webpack-merge')
