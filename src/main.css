@@ -1,0 +1,161 @@
+@font-face {
+    font-family: 'billabongregular';
+    src: url('https://cdn.rawgit.com/milktronics/beaglegr.am/master/public/fonts/billabong-webfont.eot');
+    src: url('https://cdn.rawgit.com/milktronics/beaglegr.am/master/public/fonts/billabong-webfont.eot?#iefix') format('embedded-opentype'),
+         url('https://cdn.rawgit.com/milktronics/beaglegr.am/master/public/fonts/billabong-webfont.woff') format('woff'),
+         url('https://cdn.rawgit.com/milktronics/beaglegr.am/master/public/fonts/billabong-webfont.ttf') format('truetype'),
+         url('https://cdn.rawgit.com/milktronics/beaglegr.am/master/public/fonts/billabong-webfont.svg#billabongregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+h1 {
+    font-family: billabong, 'billabongregular';
+    text-align: center;
+    font-weight: 100;
+    font-size: 8rem;
+    margin: 2rem 0;
+    letter-spacing: -1px;
+    text-shadow: 0px 4px 0 rgba(18,86,136,0.11);
+}
+h1 a {
+    color: #125688;
+    text-decoration: none;
+}
+.img-logo {
+  position: relative;
+  float: left;
+  left: 34%;
+  width: 115px;
+}
+.photo-grid {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.grid-figure, .single-photo {
+    flex-basis: calc(30.333% - 4rem);
+    flex-grow: 1;
+    flex-shrink: 0;
+    margin: 0 1rem 1rem 1rem;
+    padding: 2rem;
+    border: 1px solid #edeeed;
+    background: #fff;
+    box-shadow: 0 0 0 5px rgba(0,0,0,0.03);
+    position: relative;
+}
+.grid-photo-wrap {
+    position: relative;
+}
+.grid-photo {
+    width: calc(100% + 4rem);
+    margin-left: -2rem;
+    margin-top: -2rem;
+    max-width: none;
+}
+.likes-heart {
+    background: url(http://f.cl.ly/items/3Y373q2Q3J3Y1j203n0m/Bitmap-3.png) center no-repeat;
+    background-size: contain;
+    font-size: 2rem;
+    padding: 1rem;
+    position: absolute;
+    color: #125688;
+    left: 50%;
+    top: 50%;
+    pointer-events: none;
+}
+.likes-heart {
+    opacity: 0;
+    transition: all 0.5s;
+    transform: translateX(-50%) translateY(-50%) scale(5);
+    display: block;
+}
+.control-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+button, .button {
+    border: 2px solid #f2f2f2;
+    background: none;
+    flex-basis: 45%;
+    display: inline-block;
+    line-height: 2;
+    text-decoration: none;
+    padding: 5px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 600;
+    color: #125688;
+    transition: all 0.2s;
+    box-sizing: padding-box;
+    cursor: pointer;
+}
+.speech-bubble {
+    width: 1rem;
+    height: .75rem;
+    background: #125688;
+    display: inline-block;
+    border-radius: 50%;
+    position: relative;
+}
+.speech-bubble:after {
+    display: inline-block;
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 .75rem .75rem 0;
+    border-color: transparent #125688 transparent transparent;
+    top: 30%;
+    left: 0;
+}
+.single-photo {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  background: #fff;
+}
+.single-photo .grid-figure {
+    box-shadow: none;
+    margin: 0 2rem 0 0;
+    border: 0;
+    padding: 0;
+    flex: 1 0 60%;
+    max-width: 60%;
+}
+.single-photo .grid-photo {
+    width: 100%;
+    margin: 0;
+}
+.single-photo .comments {
+    flex: 1 0 40%;
+    max-width: 40%;
+}
+.comment {
+    border-bottom: 1px solid #edeeed;
+    padding: 0.4rem 0;
+}
+.comment p {
+    font-size: .9rem;
+    margin: 0;
+    text-align: left;
+}
+.comment strong {
+    color: #125688;
+    margin-right: 5px;
+}
+.remove-comment {
+    background: none;
+    border: 0;
+    line-height: 1;
+}
+.comment-form input, .comment-form textarea {
+    width: 100%;
+    border: 0;
+    font-size: 1rem;
+    padding: .5rem 0;
+    border-bottom: 1px solid #edeeed;
+    outline: none;
+    resize: vertical;
+}
