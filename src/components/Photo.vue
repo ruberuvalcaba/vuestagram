@@ -47,12 +47,8 @@ export default {
     increment: function(post) {
       //console.log(post.likes += 1);
 
-      return [
+      return post.likes += 1
 
-        //...post.slice(0, i), // Before the one we are updating
-        {...post, likes: post.likes += 1},
-        //...post.slice(i + 1) // After the onde we are updating
-      ]
     }
   }
 }
